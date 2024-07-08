@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ImageLoader</title>
+  <style>
+    @font-face {
+      font-family: 'fusion';
+      src: url(/fusion-pixel-12px-monospaced-zh_hant.woff2) format('woff2');
+      size-adjust: 120%;
+    }
+    *{
+      font-family: 'fusion', sans-serif;
+      user-select: none;
+    }
+    body {
+      
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+
+    }
+
+  </style>
+  <script>
+    document.addEventListener('keydown', event => {
+      if (event.key === 'F5' || (event.key === 'r' && event.ctrlKey) || (event.key === 'R' && event.ctrlKey)){
+        event.preventDefault()
+      }
+      //F12
+      if (event.key === 'F12' || (event.key === 'i' && event.ctrlKey) || (event.key === 'I' && event.ctrlKey)){
+        event.preventDefault()
+      }
+      //Ctrl+Shift+I
+      if (event.key === 'I' && event.ctrlKey && event.shiftKey){
+        event.preventDefault()
+      }
+      
+    })
+    //if (!import.meta.env.DEV) {
+      document.oncontextmenu = (event) => {
+        event.preventDefault()
+      }
+    //}
+  </script>
+  %sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents">%sveltekit.body%</div>
+</body>
+
+</html>
