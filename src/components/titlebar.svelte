@@ -30,7 +30,7 @@
     font-size: 14px;
     color: white;
     height: var(--titlebar-height);
-    background: #329ea3;
+    background: #000000;
     user-select: none;
     display: flex;
     justify-content: flex-end;
@@ -41,6 +41,8 @@
     border-radius: 5px 5px 0 0;
   }
   .titlebar-title {
+    /*single line title*/
+    white-space: nowrap;
     flex: 1;
     display: flex;
     justify-content: flex-start;
