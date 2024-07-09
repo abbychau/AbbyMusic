@@ -11,7 +11,11 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true,
+      "all": false,
+      "window" : {
+        "all": true,
+        "print": false
+      },
       "protocol": {
         "all": true,
         "asset": true,
@@ -24,10 +28,11 @@
         "open": true
       },
       "dialog": {
-        "all": true
+        "open": true
       },
       "fs":{
-        "all": true
+        "readDir": true,
+        "readFile": true
       }
     },
     "windows": [
