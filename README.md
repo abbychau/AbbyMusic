@@ -1,5 +1,7 @@
 # AbbyMusic
 
+A soothing, light, small, music player. Based on Tauri, Rust, Svelte, Typescript.
+
 ![AbbyMusic](screenshots/1.png)
 
 ## Features
